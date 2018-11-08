@@ -8,9 +8,9 @@
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 	</head>
 	<body>
-		<section>
-			<div class="container">
-				<div class="row">
+		<section class="py-5">
+			<div class="container py-5">
+				<div class="row py-5">
 					<div class="col-md-12">
 						<h1>LISTAGEM DE CONTATOS</h1>
 					</div>
@@ -49,19 +49,48 @@
 							</tbody>
 						</table>
 					</div>
+					
+					<!-- CAMPO DE BUSCA CONTATO -->
+					<div class="col-md-12 py-3" style="max-width: 100%; padding-right: 80%">
+						<label for="exampleInputEmail1">Filtro</label>
+						<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Filtro de Contatos">
+					</div>
 
 					<!-- CAMPO DE ADIÇÃO DE CONTATOS -->
-					<form>
-						<div class="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</form>
+					<div class="col-md-12 py-5">
+						<h1>Adicionar Contato</h1>
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Nome</label>
+								<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							</div>
+
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="exampleInputPassword1">RG</label>
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									</div>				
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="exampleInputPassword1">Contato</label>
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="exampleInputPassword1">Local</label>
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									</div>						
+								</div>
+							</div>
+
+							<button type="submit" class="btn btn-primary">Adicionar</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</section>

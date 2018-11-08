@@ -14,9 +14,17 @@
 					<div class="col-md-12">
 						<h1>LISTAGEM DE CONTATOS</h1>
 					</div>
-					
-					<!-- TABELA LISTA DE CONTATOS -->
 					<div class="col-md-12">
+						<div class="row">
+
+							<!-- CAMPO DE BUSCA CONTATO -->
+							<div class="col-md-12 py-3" style="max-width: 100%; padding-right: 80%">
+								<label for=""><strong>Filtro</strong></label>
+								<input type="text" class="form-control" placeholder="Filtro de Contatos">
+							</div>
+						</div>
+
+						<!-- TABELA LISTA DE CONTATOS -->
 						<table class="table">
 							<thead>
 								<tr>
@@ -26,7 +34,7 @@
 									<th scope="col">LOCAL</th>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody id="tabela-pessoas">
 								<tr>
 									<td>Marcos</td>
 									<td>321.654.987-00</td>
@@ -49,46 +57,40 @@
 							</tbody>
 						</table>
 					</div>
-					
-					<!-- CAMPO DE BUSCA CONTATO -->
-					<div class="col-md-12 py-3" style="max-width: 100%; padding-right: 80%">
-						<label for="exampleInputEmail1">Filtro</label>
-						<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Filtro de Contatos">
-					</div>
 
 					<!-- CAMPO DE ADIÇÃO DE CONTATOS -->
 					<div class="col-md-12 py-5">
-						<h1>Adicionar Contato</h1>
-						<form>
+						<h2>Adicionar Contato</h2>
+						<form id="form-adiciona">
 							<div class="form-group">
-								<label for="exampleInputEmail1">Nome</label>
-								<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+								<label for="">Nome</label>
+								<input type="text" class="form-control" placeholder="Digite o Nome">
 							</div>
 
 							<div class="row">
 								<div class="col-md-4">
 									<div class="form-group">
-										<label for="exampleInputPassword1">RG</label>
-										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										<label for="">RG</label>
+										<input type="text" class="form-control" placeholder="Digite o RG">
 									</div>				
 								</div>
 
 								<div class="col-md-4">
 									<div class="form-group">
-										<label for="exampleInputPassword1">Contato</label>
-										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										<label for="">Contato</label>
+										<input type="text" class="form-control" placeholder="Digite o Contato">
 									</div>
 								</div>
 
 								<div class="col-md-4">
 									<div class="form-group">
-										<label for="exampleInputPassword1">Local</label>
-										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										<label for="">Local</label>
+										<input type="text" class="form-control" placeholder="Digite o Local">
 									</div>						
 								</div>
 							</div>
 
-							<button type="submit" class="btn btn-primary">Adicionar</button>
+							<button id="adicionar-pessoas" type="submit" class="btn btn-primary">Adicionar</button>
 						</form>
 					</div>
 				</div>
@@ -100,5 +102,6 @@
 		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 		<script src="vendor/jquery/jquery.slim.min.js"></script>
 		<script src="vendor/popper.js/popper.min.js"></script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>

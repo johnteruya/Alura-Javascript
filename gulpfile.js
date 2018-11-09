@@ -1,3 +1,4 @@
+//npm i -D gulp-sass gulp-header gulp-clean-css gulp-rename gulp-uglify gulp-autoprefixer browser-sync
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var header = require('gulp-header');

@@ -2,15 +2,31 @@
 var titulo = document.querySelector(".titulo");
 titulo.textContent="Nome da Tabela";
 
+//CRIANDO BOTÃO DE INSERÇÃO
+var botaoAdicionar = document.querySelector("#adicionar-nome");
+
+botaoAdicionar.addEventListener("click", function(event){
+    event.preventDefault();
+    
+
+
+
+
+
+
+
+
+
+});
 
 //VERIFICADOR DE CAMPO NULO
 function required(){
-    var empt = document.forms["form"]["nome"].value;
-        if (empt == ""){
-            alert("Please input a Value");
+    var vazio = document.forms["form"]["nome"].value;
+        if (vazio == ""){
+            alert("Por Favor insera um valor");
             return false;
         } else {
-            alert('Code has accepted : you can try another');
+            alert('OK!');
             return true; 
         }
 }

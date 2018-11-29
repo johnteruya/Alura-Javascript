@@ -17,7 +17,7 @@ botaoAdicionar.addEventListener("click", function(event){
 
     var gastosTd = document.createElement("td");
     var valorTd = document.createElement("td");
-
+    
     gastosTd.textContent = gastos;
     valorTd.textContent = valor;
     
